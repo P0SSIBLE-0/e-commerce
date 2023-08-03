@@ -1,0 +1,1336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <title>ShopCart</title>
+</head>
+
+<body>
+    <header>
+        <div class="nav-wrapper">
+            <div class="logo-container">
+                <img class="logo"
+                    src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e86ab4c21faa7bc0bd90dd_Logo.svg"
+                    alt="Logo" loading="lazy">
+            </div>
+            <nav>
+                <input class="hidden" type="checkbox" id="menuToggle">
+                <label class="menu-btn" for="menuToggle">
+                    <div class="menu"></div>
+                    <div class="menu"></div>
+                    <div class="menu"></div>
+                </label>
+                <div class="nav-container">
+                    <ul class="nav-tabs">
+                        <li class="nav-tab">Home</li>
+                        <li class="nav-tab">Products</li>
+                        <li class="nav-tab">Services</li>
+                        <li class="nav-tab">FAQ</li>
+                        <li class="nav-tab">Contact</li>
+                    </ul>
+                    <div class="nav-right nav-user-info">
+                        <a href="#">
+                            <div class="nav-icon">
+                                <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63eb3dec9d6ee83660ebe1de_user.png"
+                                    alt="user">
+                            </div>
+                            <div>Account</div>
+                        </a>
+                        <a href="#">
+                            <div class="nav-icon">
+                                <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63eb3dec9b865e78d4ff6b8d_shopping-cart-add.png"
+                                    alt="user">
+                            </div>
+                            <div>Cart</div>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+            <div class="nav-right">
+                <a href="#">
+                    <div class="nav-icon">
+                        <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63eb3dec9d6ee83660ebe1de_user.png"
+                            alt="user">
+                    </div>
+                    <div>Account</div>
+                </a>
+                <a href="#">
+                    <div class="nav-icon">
+                        <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63eb3dec9b865e78d4ff6b8d_shopping-cart-add.png"
+                            alt="user">
+                    </div>
+                    <div>Cart</div>
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="hero-section">
+        <div class="hero-content">
+            <h1>Shopping And
+                Department Store.</h1>
+            <p>Shopping is a bit of a relaxing hobby for me, which is sometimes troubling for the bank balance.</p>
+            <button class="primary-btn">
+                Buy Now
+            </button>
+        </div>
+        <div class="hero-img-wrapper">
+            <img src="/Images/hero-banner.jpg" alt="" loading="lazy" height="600px" width="100%">
+            <img class="hero-product-img"
+                src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e660afc23a10a53523_other-min.png"
+                alt="">
+            <img class="hero-product-img"
+                src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e75b939fd1159c029e_tour-min.png"
+                alt="">
+            <img class="hero-product-img"
+                src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9c0607f75e4aad54b94a0_ele.png" alt="">
+        </div>
+    </div>
+    <div class="shop-category-area container">
+        <div>
+            <h1>Shop Our Top Categories</h1>
+        </div>
+        <div class="shop-category-wrap">
+            <div class="card">
+                <h3>Furniture</h3>
+                <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e570738029a725e686_Furniture-min.png"
+                    alt="">
+            </div>
+            <div class="card">
+                <h3>Hand Bag</h3>
+                <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e52d6553668075697e_hand%20bag-min.png"
+                    alt="">
+            </div>
+            <div class="card">
+                <h3>Books</h3>
+                <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e460afc22b7ea53520_books-min.png"
+                    alt="">
+            </div>
+            <div class="card">
+                <h3>Tech</h3>
+                <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e754ac2e32897cb53b_tech-min.png"
+                    alt="">
+            </div>
+            <div class="card">
+                <h3>Sneakers</h3>
+                <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e64b769118272f244f_sneakers-min.png"
+                    alt="">
+            </div>
+            <div class="card">
+                <h3>Travel</h3>
+                <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e71eb4ad6d07e7568f_travel-min.png"
+                    alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="section-title">
+            <h1>Todays Best Deals For You!</h1>
+        </div>
+        <div class="product-wrapper">
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="card-content">
+                            <div class="product-card">
+                                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8c2hvZXMlMjBuaWtlfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+                                    alt="" />
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="card-title">
+                                            <h4>Nike Sneaker</h4>
+                                            <h3>$120</h3>
+                                        </div>
+                                        <div class="view-btn">
+                                            <a href="">View Details</a>
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi,
+                                        dignissimos.
+                                    </p>
+                                    <div class="btn-group">
+                                        <div class="btn">
+                                            <a href="">Buy Now</a>
+                                        </div>
+                                        <div>
+                                            <a href=""> Add Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card-content">
+                            <div class="product-card">
+                                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aGVhZHBob25lfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+                                    alt="" />
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="card-title">
+                                            <h4>Headphones</h4>
+                                            <h3>$220</h3>
+                                        </div>
+                                        <div class="view-btn">
+                                            <a href="">View Details</a>
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    <p>
+                                        Table with air purifier, stained veneer/black
+                                    </p>
+                                    <div class="btn-group">
+                                        <div class="btn">
+                                            <a href="">Buy Now</a>
+                                        </div>
+                                        <a href=""> Add Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card-content">
+                            <div class="product-card">
+                                <img src="https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8d2F0Y2h8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                                    alt="" />
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="card-title">
+                                            <h4>Watch</h4>
+                                            <h3>$39</h3>
+                                        </div>
+                                        <div class="view-btn">
+                                            <a href="">View Details</a>
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    <p>
+                                        Lorem ipsum dolor sit, adipisicing elit. Velit animi laborum deserunt.
+                                    </p>
+                                    <div class="btn-group">
+                                        <div class="btn">
+                                            <a href="">Buy Now</a>
+                                        </div>
+                                        <a href=""> Add Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+
+                        <div class="card-content">
+                            <div class="product-card">
+                                <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fHByb2R1Y3R8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                                    alt="" />
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="card-title">
+                                            <h4>Coffee</h4>
+                                            <h3>$12</h3>
+                                        </div>
+                                        <div class="view-btn">
+                                            <a href="">View Details</a>
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi,
+                                        dignissimos.
+                                    </p>
+                                    <div class="btn-group">
+                                        <div class="btn">
+                                            <a href="">Buy Now</a>
+                                        </div>
+                                        <a href=""> Add Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+
+                        <div class="card-content">
+                            <div class="product-card">
+                                <img src="https://images.unsplash.com/photo-1547949003-9792a18a2601?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDd8fHByb2R1Y3R8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                                    alt="" />
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="card-title">
+                                            <h4>Bag Pack</h4>
+                                            <h3>$99</h3>
+                                        </div>
+                                        <div class="view-btn">
+                                            <a href="">View Details</a>
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi,
+                                        dignissimos.
+                                    </p>
+                                    <div class="btn-group">
+                                        <div class="btn">
+                                            <a href="">Buy Now</a>
+                                        </div>
+                                        <a href=""> Add Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+
+                        <div class="card-content">
+                            <div class="product-card">
+                                <img src="https://images.unsplash.com/photo-1520931061294-db3e762a9273?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTd8fHByb2R1Y3R8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                                    alt="" />
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="card-title">
+                                            <h4>water bottle</h4>
+                                            <h3>$14.99</h3>
+                                        </div>
+                                        <div class="view-btn">
+                                            <a href="">View Details</a>
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi,
+                                        dignissimos.
+                                    </p>
+                                    <div class="btn-group">
+                                        <div class="btn">
+                                            <a href="">Buy Now</a>
+                                        </div>
+                                        <a href=""> Add Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+
+                        <div class="card-content">
+                            <div class="product-card">
+                                <img src="https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTAwfHxwcm9kdWN0fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+                                    alt="" />
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="card-title">
+                                            <h4>MacBook Air</h4>
+                                            <h3>$800</h3>
+                                        </div>
+                                        <div class="view-btn">
+                                            <a href="">View Details</a>
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi,
+                                        dignissimos.
+                                    </p>
+                                    <div class="btn-group">
+                                        <div class="btn">
+                                            <a href="">Buy Now</a>
+                                        </div>
+                                        <a href=""> Cancel</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="swiper-pagination"></div> -->
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="section-title mt-2 mx-2">
+            <h1>Choose By Brand</h1>
+        </div>
+        <div class="brand-choose-section">
+            <div class="item">
+                <div class="brand-img">
+                    <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e560afc2c49da53521_brand%20(3)-min.png"
+                        alt="" loading="lazy">
+                </div>
+                <div class="brand-content">
+                    <h3>Staples</h3>
+                    <span>delivery within 24 hours</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="brand-img">
+                    <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e58b497e41aa46b801_brand%20(8)-min.png"
+                        alt="" loading="lazy">
+                </div>
+                <div class="brand-content">
+                    <h3>Sprouts</h3>
+                    <span>delivery within 24 hours</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="brand-img">
+                    <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e5eaf8533b0958cefe_brand%20(5)-min.png"
+                        alt="" loading="lazy">
+                </div>
+                <div class="brand-content">
+                    <h3>Grocery outlet</h3>
+                    <span>delivery within 24 hours</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="brand-img">
+                    <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e454ac2e9d497cb531_brand%20(6)-min.png"
+                        alt="" loading="lazy">
+                </div>
+                <div class="brand-content">
+                    <h3>Mollie stones</h3>
+                    <span>delivery within 24 hours</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="brand-img">
+                    <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e4707380971125e685_brand%20(4)-min.png"
+                        alt="" loading="lazy">
+                </div>
+                <div class="brand-content">
+                    <h3>Sports Basement</h3>
+                    <span>delivery within 24 hours</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="brand-img">
+                    <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e460afc2193aa53511_brand%20(2)-min.png"
+                        alt="" loading="lazy">
+                </div>
+                <div class="brand-content">
+                    <h3>Container Store</h3>
+                    <span>delivery within 24 hours</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="brand-img">
+                    <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e4c21faa5e03c209c5_brand%20(1)-min.png"
+                        alt="" loading="lazy">
+                </div>
+                <div class="brand-content">
+                    <h3>Target</h3>
+                    <span>delivery within 24 hours</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="brand-img">
+                    <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e51eb4ad92a3e75673_brand%20(7)-min.png"
+                        alt="" loading="lazy">
+                </div>
+                <div class="brand-content">
+                    <h3>Bevmo</h3>
+                    <span>delivery within 24 hours</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="section-title">
+            <h1>Get Up To 70% Off</h1>
+        </div>
+        <div class="discount-wrapper">
+            <div class="get-discount-item">
+                <div class="discount-content">
+                    <div class="discount-title">
+                        <h3>Save</h3>
+                    </div>
+                    <div class="discount-price">
+                        <span class="doller">$</span>100
+                    </div>
+                    <div class="discount-para">
+                        <p>Explore Our Furniture & Home Furnishing Range</p>
+                    </div>
+                </div>
+                <div class="discount-thump">
+                    <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e6cd367817e964f756_sofa-min.png"
+                        alt="">
+                </div>
+            </div>
+            <div class="get-discount-item">
+                <div class="discount-content bg-rose">
+                    <div class="discount-title">
+                        <h3>Save</h3>
+                    </div>
+                    <div class="discount-price rose-red">
+                        <span class="doller">$</span>29
+                    </div>
+                    <div class="discount-para">
+                        <p>Explore Our Furniture & Home Furnishing Range</p>
+                    </div>
+                </div>
+                <div class="discount-thump">
+                    <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e4e006822af104db61_book-min.png"
+                        alt="">
+                </div>
+            </div>
+            <div class="get-discount-item">
+                <div class="discount-content">
+                    <div class="discount-title">
+                        <h3>Save</h3>
+                    </div>
+                    <div class="discount-price yellow">
+                        <span class="doller">$</span>67
+                    </div>
+                    <div class="discount-para">
+                        <p>Explore Our Furniture & Home Furnishing Range</p>
+                    </div>
+                </div>
+                <div class="discount-thump">
+                    <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e61a7c20076aec5fe7_shirt-min.png"
+                        alt="">
+                </div>
+            </div>
+            <div class="get-discount-item">
+                <div class="discount-content bg-lime-green">
+                    <div class="discount-title">
+                        <h3>Save</h3>
+                    </div>
+                    <div class="discount-price dark-green">
+                        <span class="doller">$</span>59
+                    </div>
+                    <div class="discount-para">
+                        <p>Explore Our Furniture & Home Furnishing Range</p>
+                    </div>
+                </div>
+                <div class="discount-thump">
+                    <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e53f7127592743f6be_bug%20%26%20book-min.png"
+                        alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="section-title">
+            <h1>Weekly Popular Products</h1>
+        </div>
+        <div class="product-wrapper">
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="card-content">
+                            <div class="product-card">
+                                <img class="brand-img"
+                                    src="https://cdn.pixabay.com/photo/2020/01/11/18/13/alexa-4758340_640.jpg" alt="" />
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="card-title">
+                                            <h4>Alexa</h4>
+                                            <h3>$220</h3>
+                                        </div>
+                                        <div class="view-btn">
+                                            <a href="">View Details</a>
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi,
+                                        dignissimos.
+                                    </p>
+                                    <div class="btn-group">
+                                        <div class="btn">
+                                            <a href="">Buy Now</a>
+                                        </div>
+                                        <div>
+                                            <a href=""> Add Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card-content">
+                            <div class="product-card">
+                                <img src="https://cdn.pixabay.com/photo/2017/03/30/00/17/camera-2186901_640.png"
+                                    alt="" />
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="card-title">
+                                            <h4>Camera</h4>
+                                            <h3>$320</h3>
+                                        </div>
+                                        <div class="view-btn">
+                                            <a href="">View Details</a>
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    <p>
+                                        Table with air purifier, stained veneer/black
+                                    </p>
+                                    <div class="btn-group">
+                                        <div class="btn">
+                                            <a href="">Buy Now</a>
+                                        </div>
+                                        <a href=""> Add Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card-content">
+                            <div class="product-card">
+                                <img src="https://cdn.pixabay.com/photo/2017/08/02/00/44/lifestyle-2569185_640.jpg"
+                                    alt="" />
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="card-title">
+                                            <h4>Watch</h4>
+                                            <h3>$119</h3>
+                                        </div>
+                                        <div class="view-btn">
+                                            <a href="">View Details</a>
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    <p>
+                                        Lorem ipsum dolor sit, adipisicing elit. Velit animi laborum deserunt.
+                                    </p>
+                                    <div class="btn-group">
+                                        <div class="btn">
+                                            <a href="">Buy Now</a>
+                                        </div>
+                                        <a href=""> Add Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+
+                        <div class="card-content">
+                            <div class="product-card">
+                                <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fHByb2R1Y3R8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                                    alt="" />
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="card-title">
+                                            <h4>Coffee</h4>
+                                            <h3>$12</h3>
+                                        </div>
+                                        <div class="view-btn">
+                                            <a href="">View Details</a>
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi,
+                                        dignissimos.
+                                    </p>
+                                    <div class="btn-group">
+                                        <div class="btn">
+                                            <a href="">Buy Now</a>
+                                        </div>
+                                        <a href=""> Add Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+
+                        <div class="card-content">
+                            <div class="product-card">
+                                <img src="https://images.unsplash.com/photo-1547949003-9792a18a2601?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDd8fHByb2R1Y3R8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                                    alt="" />
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="card-title">
+                                            <h4>Bag Pack</h4>
+                                            <h3>$99</h3>
+                                        </div>
+                                        <div class="view-btn">
+                                            <a href="">View Details</a>
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi,
+                                        dignissimos.
+                                    </p>
+                                    <div class="btn-group">
+                                        <div class="btn">
+                                            <a href="">Buy Now</a>
+                                        </div>
+                                        <a href=""> Add Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+
+                        <div class="card-content">
+                            <div class="product-card">
+                                <img src="https://images.unsplash.com/photo-1520931061294-db3e762a9273?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTd8fHByb2R1Y3R8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                                    alt="" />
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="card-title">
+                                            <h4>water bottle</h4>
+                                            <h3>$14.99</h3>
+                                        </div>
+                                        <div class="view-btn">
+                                            <a href="">View Details</a>
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi,
+                                        dignissimos.
+                                    </p>
+                                    <div class="btn-group">
+                                        <div class="btn">
+                                            <a href="">Buy Now</a>
+                                        </div>
+                                        <a href=""> Add Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+
+                        <div class="card-content">
+                            <div class="product-card">
+                                <img src="https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTAwfHxwcm9kdWN0fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+                                    alt="" />
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="card-title">
+                                            <h4>MacBook Air</h4>
+                                            <h3>$800</h3>
+                                        </div>
+                                        <div class="view-btn">
+                                            <a href="">View Details</a>
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi,
+                                        dignissimos.
+                                    </p>
+                                    <div class="btn-group">
+                                        <div class="btn">
+                                            <a href="">Buy Now</a>
+                                        </div>
+                                        <a href=""> Cancel</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="swiper-pagination"></div> -->
+            </div>
+        </div>
+    </div>
+    <div class="discount-banner-image">
+        <div class="discount-img">
+            <div class="discount-banner-content">
+                <h2>Get 5% Cash Back On $200</h2>
+                <p>Shopping is a bit of a relaxing hobby for me, which is sometimes troubling for the bank balance.</p>
+                <button class="dark-green dis-btn">Learn More</button>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-4">
+        <div class="section-title">
+            <h1>Todays Best Deals For You!</h1>
+        </div>
+        <div class="product-tab-menu">
+            <button class="product-tab-link">Gadgets</button>
+            <button class="product-tab-link">Fashion</button>
+            <button class="product-tab-link">Toys</button>
+            <button class="product-tab-link">Beauty</button>
+            <button class="product-tab-link">Education</button>
+            <button class="product-tab-link">Furniture</button>
+            <button class="product-tab-link">Sneakers</button>
+        </div>
+        <div class="product-tab-content">
+            <div class="product-tab-item-wrapper">
+                <div class="product-single-item">
+                    <div class="product-tab-thumb">
+                        <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e68b497e229146b818_leptop%20sleeve-min.png"
+                            alt="">
+                        <div class="product-wishlist">
+                            <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9df775b939f51a0b22f6d_Icon.svg"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-title-wrap">
+                            <div class="product-title">Laptop sleeve MacBook</div>
+                            <div class="product-price"><span>$</span>50.00</div>
+                        </div>
+                        <div class="product-dis">Organic Cotton, fairtrade certified</div>
+                        <div class="product-rating">
+                            <div class="star-wrap">
+                                <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                                    alt="">
+                                <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                                    alt="">
+                                <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                                    alt="">
+                                <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                                    alt="">
+                                <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                                    alt="">
+                            </div>
+                            <div class="total-rating">(121)</div>
+                        </div>
+                        <button class="product-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-single-item">
+                    <div class="product-tab-thumb">
+                        <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e4aed3c6720e446aa1_airpod%20max-min.png"
+                            alt="">
+                        <div class="product-wishlist">
+                            <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9df775b939f51a0b22f6d_Icon.svg"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-title-wrap">
+                            <div class="product-title">AirPods Max</div>
+                            <div class="product-price"><span>$</span>559.00</div>
+                        </div>
+                        <div class="product-dis">A perfect balance of high-fidelity audio</div>
+                        <div class="product-rating">
+                            <div class="star-wrap">
+                                <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                                    alt="">
+                                <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                                    alt="">
+                                <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                                    alt="">
+                                <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                                    alt="">
+                                <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                                    alt="">
+                            </div>
+                            <div class="total-rating">(121)</div>
+                        </div>
+                        <button class="product-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-single-item">
+                    <div class="product-tab-thumb">
+                        <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e55cc9361a8ecce6d4_flower%20leptop%20sleeve-min.png"
+                            alt="">
+                        <div class="product-wishlist">
+                            <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9df775b939f51a0b22f6d_Icon.svg"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-title-wrap">
+                            <div class="product-title">Flower Laptop Sleeve</div>
+                            <div class="product-price"><span>$</span>39.00</div>
+                        </div>
+                        <div class="product-dis">15 in. x 10 in. -Flap top closure</div>
+                        <div class="product-rating">
+                            <div class="star-wrap">
+                                <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                                    alt="">
+                                <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                                    alt="">
+                                <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                                    alt="">
+                                <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                                    alt="">
+                                <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                                    alt="">
+                            </div>
+                            <div class="total-rating">(121)</div>
+                        </div>
+                        <button class="product-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-single-item">
+                    <div class="product-tab-thumb">
+                        <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e78b497e3a5646b82f_water%20pot-min.png"
+                            alt="">
+                        <div class="product-wishlist">
+                            <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9df775b939f51a0b22f6d_Icon.svg"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-title-wrap">
+                            <div class="product-title">Supreme Water Bottle</div>
+                            <div class="product-price"><span>$</span>19.00</div>
+                        </div>
+                        <div class="product-dis">Table with air purifier, stained veneer/black</div>
+                        <div class="product-rating">
+                            <div class="star-wrap">
+                                <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                                    alt="">
+                                <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                                    alt="">
+                                <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                                    alt="">
+                                <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                                    alt="">
+                                <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                                    alt="">
+                            </div>
+                            <div class="total-rating">(121)</div>
+                        </div>
+                        <button class="product-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-single-item">
+                    <div class="product-tab-thumb">
+                        <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e563db5560c31bbfce_leptop%20sleeve%20macbook-min.png"
+                            alt="">
+                        <div class="product-wishlist">
+                            <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9df775b939f51a0b22f6d_Icon.svg"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-title-wrap">
+                            <div class="product-title">Laptop sleeve MacBook</div>
+                            <div class="product-price"><span>$</span>50.00</div>
+                        </div>
+                        <div class="product-dis">Organic Cotton, fairtrade certified</div>
+                        <div class="product-rating">
+                            <div class="star-wrap">
+                                <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                                    alt="">
+                                <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                                    alt="">
+                                <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                                    alt="">
+                                <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                                    alt="">
+                                <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                                    alt="">
+                            </div>
+                            <div class="total-rating">(121)</div>
+                        </div>
+                        <button class="product-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-single-item">
+                    <div class="product-tab-thumb">
+                        <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e61eb4ad4af6e75689_macbook%2013-min.png"
+                            alt="">
+                        <div class="product-wishlist">
+                            <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9df775b939f51a0b22f6d_Icon.svg"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-title-wrap">
+                            <div class="product-title">MacBook 13 Pro</div>
+                            <div class="product-price"><span>$</span>1099.00</div>
+                        </div>
+                        <div class="product-dis">256, 8 core GPU, 8 GB</div>
+                        <div class="product-rating">
+                            <div class="star-wrap">
+                                <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                                    alt="">
+                                <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                                    alt="">
+                                <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                                    alt="">
+                                <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                                    alt="">
+                                <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                                    alt="">
+                            </div>
+                            <div class="total-rating">(121)</div>
+                        </div>
+                        <button class="product-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-single-item">
+                    <div class="product-tab-thumb">
+                        <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e563db5507951bbfbe_homepad-mini-min.png"
+                            alt="">
+                        <div class="product-wishlist">
+                            <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9df775b939f51a0b22f6d_Icon.svg"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-title-wrap">
+                            <div class="product-title">HomePod Mini</div>
+                            <div class="product-price"><span>$</span>59.00</div>
+                        </div>
+                        <div class="product-dis">5 Colors Available</div>
+                        <div class="product-rating">
+                            <div class="star-wrap">
+                                <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                                    alt="">
+                                <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                                    alt="">
+                                <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                                    alt="">
+                                <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                                    alt="">
+                                <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                                    alt="">
+                            </div>
+                            <div class="total-rating">(121)</div>
+                        </div>
+                        <button class="product-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-single-item">
+                    <div class="product-tab-thumb">
+                        <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e64bd907adafd35b46_ipad%20mini-min.png"
+                            alt="">
+                        <div class="product-wishlist">
+                            <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9df775b939f51a0b22f6d_Icon.svg"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-title-wrap">
+                            <div class="product-title">Ipad mini</div>
+                            <div class="product-price"><span>$</span>539.00</div>
+                        </div>
+                        <div class="product-dis">Table with air purifier, stained veneer/black</div>
+                        <div class="product-rating">
+                            <div class="star-wrap">
+                                <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                                    alt="">
+                                <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                                    alt="">
+                                <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                                    alt="">
+                                <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                                    alt="">
+                                <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                                    alt="">
+                            </div>
+                            <div class="total-rating">(121)</div>
+                        </div>
+                        <button class="product-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="discount-banner-content-two">
+        <div class="container discount-banner-inner">
+            <div class="discount-banner-content-inner">
+                <h2>Get 5% Cash Back</h2>
+                <p>on Shopcart.com</p>
+                <button class="primary-btn">
+                    Buy Now
+                </button>
+            </div>
+            <div class="banner-img">
+                <img src="/Images/realistic-credit-card-design_23-2149126093.avif" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container mt-4">
+        <div class="section-title">
+            <h1>Most Selling Products</h1>
+        </div>
+        <div class="product-wrapper">
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="product-single-item w-90">
+                            <div class="product-tab-thumb">
+                                <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e74b76916e072f2466_watch-min.png"
+                                    alt="">
+                                <div class="product-wishlist">
+                                    <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9df775b939f51a0b22f6d_Icon.svg"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div class="product-content-two">
+                                <div class="product-title-wrap">
+                                    <div class="product-title">Hand Watch</div>
+                                    <div class="product-price"><span>$</span>59.00</div>
+                                </div>
+                                <div class="product-dis">Citizen 650M, W-69g</div>
+                                <div class="product-rating">
+                                    <div class="star-wrap">
+                                        <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                                            alt="">
+                                        <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                                            alt="">
+                                        <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                                            alt="">
+                                        <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                                            alt="">
+                                        <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                                            alt="">
+                                    </div>
+                                    <div class="total-rating">(121)</div>
+                                </div>
+                                <button class="product-btn">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product-single-item w-90">
+                            <div class="product-tab-thumb">
+                                <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e6eaf85336ce58cf03_instax%20mini%2011-min.png"
+                                    alt="">
+                                <div class="product-wishlist">
+                                    <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9df775b939f51a0b22f6d_Icon.svg"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div class="product-content-two">
+                                <div class="product-title-wrap">
+                                    <div class="product-title">Instax Mini 11</div>
+                                    <div class="product-price"><span>$</span>89.00</div>
+                                </div>
+                                <div class="product-dis">Selfie mode and selfie mirror, Mirco mode</div>
+                                <div class="product-rating">
+                                    <div class="star-wrap">
+                                        <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                                            alt="">
+                                        <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                                            alt="">
+                                        <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                                            alt="">
+                                        <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                                            alt="">
+                                        <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                                            alt="">
+                                    </div>
+                                    <div class="total-rating">(121)</div>
+                                </div>
+                                <button class="product-btn">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product-single-item w-90">
+                            <div class="product-tab-thumb">
+                                <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e4037f3ba53bcf2021_adidas%20sneakers-min.png"
+                                    alt="">
+                                <div class="product-wishlist">
+                                    <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9df775b939f51a0b22f6d_Icon.svg"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div class="product-content-two">
+                                <div class="product-title-wrap">
+                                    <div class="product-title">Adidas Sneaker</div>
+                                    <div class="product-price"><span>$</span>159.00</div>
+                                </div>
+                                <div class="product-dis">X sean wotherspoon Superstart Sneaker</div>
+                                <div class="product-rating">
+                                    <div class="star-wrap">
+                                        <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                                            alt="">
+                                        <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                                            alt="">
+                                        <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                                            alt="">
+                                        <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                                            alt="">
+                                        <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                                            alt="">
+                                    </div>
+                                    <div class="total-rating">(121)</div>
+                                </div>
+                                <button class="product-btn">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product-single-item w-90">
+                            <div class="product-tab-thumb">
+                                <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e65cc936826acce6d9_pendleton%20water%20bottle-min.png"
+                                    alt="">
+                                <div class="product-wishlist">
+                                    <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9df775b939f51a0b22f6d_Icon.svg"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div class="product-content-two">
+                                <div class="product-title-wrap">
+                                    <div class="product-title">Pendleton Water bottle</div>
+                                    <div class="product-price"><span>$</span>89.00</div>
+                                </div>
+                                <div class="product-dis">Stainless steel, Food safe, hand wash</div>
+                                <div class="product-rating">
+                                    <div class="star-wrap">
+                                        <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                                            alt="">
+                                        <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                                            alt="">
+                                        <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                                            alt="">
+                                        <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                                            alt="">
+                                        <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                                            alt="">
+                                    </div>
+                                    <div class="total-rating">(121)</div>
+                                </div>
+                                <button class="product-btn">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product-single-item w-90">
+                            <div class="product-tab-thumb">
+                                <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e5bc6a9ac192b3d597_cabin-min.png"
+                                    alt="">
+                                <div class="product-wishlist">
+                                    <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9df775b939f51a0b22f6d_Icon.svg"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div class="product-content-two">
+                                <div class="product-title-wrap">
+                                    <div class="product-title">Cabin</div>
+                                    <div class="product-price"><span>$</span>239.00</div>
+                                </div>
+                                <div class="product-dis">handy suitcase</div>
+                                <div class="product-rating">
+                                    <div class="star-wrap">
+                                        <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                                            alt="">
+                                        <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                                            alt="">
+                                        <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                                            alt="">
+                                        <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                                            alt="">
+                                        <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                                            alt="">
+                                    </div>
+                                    <div class="total-rating">(121)</div>
+                                </div>
+                                <button class="product-btn">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="container">
+        <hr>
+    </div>
+    <br>
+    <!-- footer -->
+    <div class="footer">
+        <div class="contain">
+            <div class="col">
+                <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e86ab4c21faa7bc0bd90dd_Logo.svg" alt=""> 
+                <p class="mt-2" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod harum rem dolores excepturi, iusto quo.</p>
+            </div>
+            <div class="col">
+                <h1>Department</h1>
+                <ul>
+                    <li>Fashion</li>
+                    <li>Education Product</li>
+                    <li>Frozen Food</li>
+                    <li>Organic Grocery</li>
+                    <li>Beauty Products</li>
+                    <li>Books</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h1>About Us</h1>
+                <ul>
+                    <li>About</li>
+                    <li>Mission</li>
+                    <li>Services</li>
+                    <li>Social</li>
+                    <li>Get in touch</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h1>Resources</h1>
+                <ul>
+                    <li>Webmail</li>
+                    <li>Redeem code</li>
+                    <li>WHOIS lookup</li>
+                    <li>Site map</li>
+                    <li>Web templates</li>
+                    <li>Email templates</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h1>Support</h1>
+                <ul>
+                    <li>Contact us</li>
+                    <li>Web chat</li>
+                    <li>Open ticket</li>
+                </ul>
+            </div>
+            <!-- <div class="col social">
+                <h1>Social</h1>
+                <ul>
+                    <li><img src="https://svgshare.com/i/5fq.svg" width="32" style="width: 32px;"></li>
+                    <li><img src="https://svgshare.com/i/5eA.svg" width="32" style="width: 32px;"></li>
+                    <li><img src="https://svgshare.com/i/5f_.svg" width="32" style="width: 32px;"></li>
+                </ul>
+            </div> -->
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 30,
+                },
+            },
+        });
+    </script>
+</body>
+
+
+<script src="script.js"></script>
+</script>
+
+</html>
