@@ -789,7 +789,7 @@ h1 {
 
   }
   .get-discount-item{
-    width: 340px;
+    width: calc(100% - 0.8rem);
   }
   .discount-thump img{
     width: 100%;
